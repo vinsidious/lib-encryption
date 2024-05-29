@@ -1,0 +1,38 @@
+{
+  "name": "@vinsidious/lib-encryption",
+  "description": "Encryption Utility, ported from Venipa/encryption.js",
+  "version": "1.0.1",
+  "license": "MIT",
+  "repository": "https://github.com/vinsidious/lib-encryption",
+  "author": {
+    "email": "vincecoppola@gmail.com",
+    "name": "Vince Coppola",
+    "url": "https://github.com/vinsidious"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "engines": { "node": ">=16" },
+  "scripts": {
+    "start": "tsc --watch",
+    "build": "tsc",
+    "prepare": "tsc"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "tslib": "^2.4.1",
+    "typescript": "5.4.5"
+  },
+  "dependencies": {
+    "@poppinss/utils": "^5.0.0"
+  }
+}
